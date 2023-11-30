@@ -1,0 +1,48 @@
+# npx create-react-app [react-for-beginners(앱이름)]
+
+# 생성된 앱으로 위치이동
+
+# npm run start : development server(개발용 서버)를 만들게 될 거야.
+
+# src 폴더는 네 모든 파일들을 넣을 폴더야.
+
+# 그 안에서 제일 중용한 파일은 index.js 야. 그리고 index.js에서는 아주 익숙한 것들을 볼 수 있지.
+
+# 이것들은 단지 컴포넌트야. 하지만 지금, 네가 nodeJS로 작업하고 있기 때문에 파일들을 각각 분리시키는 게 가능하고,
+  좀 더 조직적으로 구성할 수 있게 됐지.
+
+# 우리는 한 파일당 한 컴포넌트를 가지고 있고, index.js에서 그 컴포넌트를 import 시켰어.
+  즉, 차후에 버튼과 같은 다른 컴포넌트도 한개의 파일로 이루어질거라는걸 의미하지.
+
+# 그래서 보다시피 create-react-app은 꽤 많은 기본 파일들이 딸려 있어.
+  우리는 index.js랑 App.js만 남기고 나머지는 다 지워줄거야.
+  결국 우린 깔끔한 create-react-app의 설치판을 얻었어.
+
+# index.js에 우리 리액트 어플리케이션을 랜더링해줄 뿐인 index랑
+  Welcome back!을 랜더링해줄 뿐인 우리의 App
+
+# 우리는 끝냈어. 우린 React App을 만들었어.
+  우리가 해야 할 일은, 어플리케이션을 만들고 npm start를 실행하는 거야.  
+
+# npm i prop-types   
+  npm aux 하지 않기... 프로젝트 망가진다.
+
+# 특정 컴포넌트를 위한 CSS파일을 만들 수 있는 기능을 얻었다는 거야.
+
+# create-react-app으로 작업할 때의 포인트는 '분할하고' '정복하는' 거야.
+
+# 이게 우리가 create-react-app을 배울 때 진짜 멋진 점인데, 바로 CSS modules라는거야.
+  우리는 Button.module.css에 .btn css를 작성하고, 우리는 index.js에 import 하지 않을거야.
+  대신에, 이 스타일을 Button.js에 import 시켜줄 거야.
+  import styles from "./Button.module.css"
+  이유는, 이제 내가 class이름을 내 버튼에 추가할 수 있는데
+  하지만 className을 btn 이런 식으로 쓰지 않을 거야.
+
+# 우리는 css코드를 작성하고 있는데 하지만 create-react-app은 이 css 코드를 javascript 오브젝트로 변환시켜준다.
+  그리고 이 javascript 오브젝트는 btn을 안에 갖고 있는 거지.
+  그리고 알 수 있지. 
+  create-react-app은 무작위적인 랜덤 class를 갖는다는 걸.
+  심지어 네 style들도 modular(모듈러)가 될 수 있다는 거야.
+
+# 고로 이제 동일한 class 이름을, btn을, 다른 파일 내에서도 사용할 수 있어.
+  하지만 create-react-app은 랜덤하게 보이는 클래스 이름을 만들어낼 거지.
